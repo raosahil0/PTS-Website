@@ -104,7 +104,7 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
       {/* =========================================================================
            HERO & LIVE HUD TELEMETRY SECTION
            ========================================================================= */}
-      <section className="relative w-full px-4 sm:px-gutter-lg pt-24 pb-12 sm:pt-28 sm:pb-16 overflow-hidden bg-surface-container-lowest border-b border-surface-container-high" id="home">
+      <section className="relative w-full px-4 sm:px-gutter-lg pt-32 pb-16 sm:pt-36 sm:pb-20 overflow-hidden bg-surface-container-lowest border-b border-surface-container-high" id="home">
         <div className="absolute inset-0 pointer-events-none opacity-20 grid-pattern"></div>
 
         <div className="relative max-w-7xl mx-auto flex flex-col gap-space-xl">

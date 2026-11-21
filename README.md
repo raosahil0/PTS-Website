@@ -1,54 +1,77 @@
-﻿# Perfect Tech Solutions (PTS) - Official Enterprise Website
+# Perfect Tech Solutions (PTS) — React Web Application
 
-Modern, responsive web platform for Perfect Tech Solutions — specialized in heavy civil diagnostic and telemetry instrumentation systems.
+Modern, responsive enterprise React platform for Perfect Tech Solutions — specialized in heavy civil diagnostic and telemetry instrumentation systems.
+
+Built with **React 18**, **Vite**, **React Router v6**, and **Tailwind CSS**.
+
+---
 
 ## 🚀 Quick Start
 
-### Option 1: Live Local Web Server (Recommended)
-You can run a local HTTP server using Python or Node.js:
-
+### Development Server
 ```bash
-# Using Python
-python -m http.server 3000
-
-# Using Node.js npx
-npx serve .
+npm install
+npm run dev
 ```
-Then open `http://localhost:3000` in your web browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser. Instant Hot Module Replacement (HMR) is active.
 
-### Option 2: Direct Browser File
-Double-click `index.html` to open it directly in any modern browser (Chrome, Edge, Firefox, Safari).
-
----
-
-## 📁 File Structure
-
-| File | Description |
-|------|-------------|
-| `index.html` | Homepage with hero section, live telemetry canvas, feature highlights, and interactive dispatch console. |
-| `services.html` | Centralized service directory detailing technical SLAs, rapid deployment, calibration, and support tiers. |
-| `about.html` | Corporate credentials, ISO/IEC 17025 certification, engineering history, and mission. |
-| `nsv.html` | Network Survey Vehicles (NSV) — Laser profiling, 3D crack mapping, high-speed telemetry. |
-| `fwd.html` | Falling Weight Deflectometers (FWD / HWD) — Dynamic pulse loading, seismic geophone array. |
-| `mbiu.html` | Mobile Bridge Inspection Units (MBIU) — Articulated boom telemetry, under-deck diagnostics. |
-| `software-and-data.html` | Proprietary civil data ingestion, automated GIS alignment, and cloud analytics. |
-| `hardware-solutions.html` | IPC-certified micro-soldering laboratory, MIL-spec cabling, and DAQ board repair. |
-| `projects.html` | Real-world case studies and infrastructure fleet overhauls. |
-| `contact.html` | 24/7 technical dispatch portal with interactive ticket submission simulation. |
-| `logo.png` | Transparent high-resolution PTS branding logo. |
-| `logo-white.png` | White-backed PTS branding logo. |
-| `logo-icon.png` | Square PTS badge icon for responsive navigation and mobile drawers. |
-| `favicon.ico` | Multi-resolution browser icon (16x16, 32x32, 48x48, 64x64). |
+### Production Build
+```bash
+npm run build
+npm run preview
+```
+Creates an optimized static bundle in `/dist`.
 
 ---
 
-## 🎨 Theme & Technology Stack
+## 📁 Project Architecture
 
-- **Styling**: Tailwind CSS CDN with custom design system tokens.
-- **Color Palette**: Clean white background (`#ffffff`), dark slate typography (`#0f172a`), sky blue tech accents (`#0284c7`).
-- **Fonts**: Inter (UI prose), JetBrains Mono (Technical telemetry data).
-- **Icons**: Google Material Symbols Outlined.
-- **Responsiveness**: Fully responsive desktop navbar with dropdown menus and mobile slide-out navigation drawer.
+```
+├── public/                 # Static assets (logos, images, favicon)
+│   ├── logo.png
+│   ├── logo-white.png
+│   ├── logo-icon.png
+│   ├── favicon.ico
+│   ├── nsv-vehicle.jpg
+│   ├── fwd-trailer.jpg
+│   ├── mbiu-unit.jpg
+│   └── pcb-lab.jpg
+├── src/
+│   ├── components/         # Shared global components
+│   │   ├── Navbar.jsx      # Navigation bar, mobile drawer, services dropdown
+│   │   ├── Footer.jsx      # Telemetry footer, contact directories, compliance
+│   │   ├── CommandPalette.jsx # Ctrl+K global interactive search modal
+│   │   ├── SpecModal.jsx   # Vehicle and sensor technical specification viewer
+│   │   └── TicketModal.jsx # Diagnostic ticket dispatch confirmation dialog
+│   ├── pages/              # Routed pages
+│   │   ├── Home.jsx        # Hero, Telemetry HUD, Deflection Simulator, Harness Workbench
+│   │   ├── About.jsx       # ISO/IEC 17025 accreditation, lab history, credentials
+│   │   ├── Services.jsx    # 5 specialized fleet divisions, SLAs, engineering tiers
+│   │   ├── NSV.jsx         # Network Survey Vehicles, laser profilometers, ROMDAS sync
+│   │   ├── FWD.jsx         # Falling Weight Deflectometers, AASHTO R32, geophone array
+│   │   ├── MBIU.jsx        # Mobile Bridge Inspection Units, proportional hydraulics
+│   │   ├── SoftwareAndData.jsx # Quarter-car IRI, ELMOD moduli, GIS shapefile export
+│   │   ├── HardwareSolutions.jsx # MIL-spec cabling, IPC Class 3 PCB micro-soldering
+│   │   ├── Projects.jsx    # Real-world infrastructure case studies & fleet overhauls
+│   │   └── Contact.jsx     # 24/7 technical dispatch portal & ticket submission
+│   ├── App.jsx             # React Router setup (supports clean and .html paths)
+│   ├── index.css           # Tailwind directives & grid pattern styling
+│   └── main.jsx            # React root mount point
+├── legacy-html/            # Preserved original HTML files
+├── package.json            # Project dependencies and build scripts
+├── vite.config.js          # Vite configuration
+└── tailwind.config.js      # PTS theme tokens and design system configuration
+```
+
+---
+
+## 🎨 Interactive Features in React
+
+- **Live Telemetry Status**: Real-time UTC clock and network latency simulation in header and HUD.
+- **Deflection Basin Simulator**: Dynamic SVG curve modeling AASHTO impulse deflection and calculating subgrade modulus (`E_sub`) from slider inputs.
+- **MIL-Spec Harness Configurator**: Interactive parts builder generating custom SKU codes with one-click clipboard copy.
+- **Command Palette (`Ctrl+K`)**: Instant search across all vehicle specifications, services, and field utilities.
+- **Technical Dispatch Desk**: Form validation with simulated priority ticket generation.
 
 ---
 
