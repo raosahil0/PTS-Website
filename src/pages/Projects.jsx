@@ -71,8 +71,11 @@ export default function Projects() {
       {/* Case Studies Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {CASE_STUDIES.map((cs, idx) => (
-          <div key={idx} className="p-8 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-6 shadow-sm hover:border-primary-container/40 transition-all">
+          <div key={idx} className="p-6 sm:p-8 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-6 shadow-sm hover:border-primary-container/40 transition-all group">
             <div className="flex flex-col gap-3">
+              <div className="w-full h-48 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high mb-1">
+                <img src={cs.img} alt={cs.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              </div>
               <div className="flex items-center justify-between">
                 <span className="font-mono text-xs text-secondary font-bold uppercase">{cs.tag}</span>
                 <span className="px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] font-mono text-on-surface-variant border border-outline-variant">

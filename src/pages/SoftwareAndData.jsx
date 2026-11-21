@@ -11,18 +11,32 @@ export default function SoftwareAndData() {
         <span className="text-primary font-bold">SOFTWARE & SURVEY DATA PROCESSING</span>
       </div>
 
-      {/* Header */}
-      <div className="flex flex-col gap-4">
-        <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded bg-surface-container text-primary font-mono text-xs border border-primary-container/30">
-          <span className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
-          <span>CIVIL TELEMETRY COMPUTING PIPELINE</span>
+      {/* Header / Hero */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="lg:col-span-7 flex flex-col gap-4">
+          <div className="inline-flex items-center gap-2 self-start px-3 py-1 rounded bg-surface-container text-primary font-mono text-xs border border-primary-container/30">
+            <span className="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            <span>CIVIL TELEMETRY COMPUTING PIPELINE</span>
+          </div>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-primary tracking-tight">
+            Software & Survey Data Processing Workflows
+          </h1>
+          <p className="text-lg text-on-surface-variant leading-relaxed">
+            Raw sensor streams are only as valuable as the mathematical models that interpret them. PTS provides complete data QA/QC, quarter-car simulation filtering, moduli back-calculation, and automated GIS shapefile formatting for highway and municipal asset management.
+          </p>
+          <div className="flex flex-wrap gap-4 pt-2">
+            <Link to="/contact" className="px-6 py-3 rounded bg-primary-container text-on-primary font-bold uppercase tracking-wider text-sm hover:bg-primary transition-all">
+              Request Data Processing QA/QC
+            </Link>
+            <Link to="/#deflection-simulator" className="px-6 py-3 rounded bg-surface-container-high text-on-surface font-bold uppercase tracking-wider text-sm hover:bg-surface-bright transition-all border border-outline-variant">
+              Interactive Deflection Simulator
+            </Link>
+          </div>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-primary tracking-tight">
-          Software & Survey Data Processing Workflows
-        </h1>
-        <p className="text-lg text-on-surface-variant max-w-3xl leading-relaxed">
-          Raw sensor streams are only as valuable as the mathematical models that interpret them. PTS provides complete data QA/QC, quarter-car simulation filtering, moduli back-calculation, and automated GIS shapefile formatting for highway and municipal asset management.
-        </p>
+
+        <div className="lg:col-span-5 rounded-xl overflow-hidden border border-surface-container-high bg-surface-container-lowest shadow-md">
+          <img alt="Civil survey software and telemetry dashboard" className="w-full h-80 object-cover" src="/software-dashboard.jpg" />
+        </div>
       </div>
 
       {/* 4 Core Pillars */}

@@ -118,7 +118,7 @@ export default function Navbar({ onOpenSearch }) {
 
             {/* Dropdown Menu Container with hover bridge */}
             <div
-              className={`absolute top-full left-0 pt-2 w-[580px] z-[100] transition-all duration-200 ${
+              className={`absolute top-full left-0 pt-2 w-[580px] max-w-[90vw] z-[100] transition-all duration-200 ${
                 servicesDropdownOpen
                   ? 'opacity-100 visible translate-y-0'
                   : 'opacity-0 invisible -translate-y-1 pointer-events-none'

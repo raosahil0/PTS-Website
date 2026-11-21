@@ -95,6 +95,15 @@ export default function Contact({ onTicketCreated }) {
             <div className="flex justify-between text-on-surface-variant"><span>Hub-03 (Southwest):</span> <span className="text-primary">Dallas / Austin Hub</span></div>
             <div className="flex justify-between text-on-surface-variant"><span>Hub-04 (West Coast):</span> <span className="text-primary">Denver / Pacific NW</span></div>
           </div>
+
+          {/* Rapid Dispatch Vehicle Visual */}
+          <div className="rounded-xl overflow-hidden border border-surface-container-high shadow-sm">
+            <img src="/highway-inspection.jpg" alt="PTS Emergency Mobile Field Unit" className="w-full h-40 object-cover" />
+            <div className="p-3 bg-surface-container font-mono text-[11px] text-on-surface-variant flex items-center justify-between">
+              <span>RAPID DISPATCH FLEET</span>
+              <span className="text-emerald-500 font-bold">24-48 HR MOBILIZATION</span>
+            </div>
+          </div>
         </div>
 
         {/* Support Form Right Column */}
