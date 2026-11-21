@@ -29,7 +29,7 @@ export default function Contact({ onTicketCreated }) {
   };
 
   return (
-    <main className="w-full pt-24 pb-16 flex-1 px-4 sm:px-6 max-w-7xl mx-auto flex flex-col gap-10">
+    <main className="w-full pt-32 pb-20 flex-1 px-4 sm:px-6 max-w-7xl mx-auto flex flex-col gap-10">
       {/* Breadcrumb */}
       <div className="flex items-center gap-2 font-mono text-xs text-on-surface-variant">
         <Link to="/" className="hover:text-primary">HOME</Link>
