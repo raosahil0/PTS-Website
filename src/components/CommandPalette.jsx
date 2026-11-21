@@ -52,11 +52,11 @@ export default function CommandPalette({ isOpen, onClose }) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-2xl bg-surface-container-lowest rounded-2xl shadow-2xl border border-surface-container-high overflow-hidden flex flex-col"
+        className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl border border-surface-container-high overflow-hidden flex flex-col"
         onClick={e => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-surface-container-high bg-surface-container/40">
+        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-surface-container-high bg-slate-50">
           <span className="material-symbols-outlined text-primary-container text-2xl">search</span>
           <input
             type="text"

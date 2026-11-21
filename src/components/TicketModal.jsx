@@ -9,7 +9,7 @@ export default function TicketModal({ ticketData, onClose }) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl border border-surface-container-high overflow-hidden flex flex-col"
+        className="w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-surface-container-high overflow-hidden flex flex-col"
         onClick={e => e.stopPropagation()}
       >
         {/* Modal Header */}

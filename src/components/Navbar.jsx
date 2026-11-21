@@ -25,7 +25,7 @@ export default function Navbar({ onOpenSearch }) {
       : "px-3 py-1.5 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors";
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-surface-container-high shadow-sm">
       {/* Top Telemetry / Status Bar */}
       <div className="w-full bg-surface-container-low px-4 sm:px-gutter-lg py-1 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant border-b border-surface-container-high/60">
         <div className="flex items-center gap-space-lg flex-wrap">
@@ -59,7 +59,7 @@ export default function Navbar({ onOpenSearch }) {
       </div>
 
       {/* Main Navigation Bar */}
-      <div className="h-16 w-full px-4 sm:px-gutter-lg flex items-center justify-between gap-space-md bg-surface-container/80 backdrop-blur">
+      <div className="h-16 w-full px-4 sm:px-gutter-lg flex items-center justify-between gap-space-md bg-white">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-space-sm shrink-0 group py-1" aria-label="Perfect Tech Solutions Home">
           <img src="/logo.png" alt="PTS Logo" className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-[1.02]" />
@@ -96,7 +96,7 @@ export default function Navbar({ onOpenSearch }) {
             </Link>
 
             {/* Dropdown Menu */}
-            <div className={`absolute top-full left-0 mt-1 w-80 rounded-xl bg-surface-container-lowest/98 backdrop-blur-xl border border-surface-container-high shadow-2xl p-2 flex flex-col gap-1 z-50 transition-all ${servicesDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+            <div className={`absolute top-full left-0 mt-2 w-80 rounded-xl bg-white border border-surface-container-high shadow-2xl p-2 flex flex-col gap-1 z-[100] transition-all ${servicesDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
               <Link to="/services" className="p-2.5 rounded-lg hover:bg-surface-container-high flex items-center gap-2.5 text-primary font-bold text-xs uppercase border-b border-surface-container-high/60">
                 <span className="material-symbols-outlined text-[18px] text-primary-container">handyman</span>
                 <div className="flex flex-col">
@@ -184,7 +184,7 @@ export default function Navbar({ onOpenSearch }) {
 
       {/* Mobile Slide-Out Drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden fixed inset-x-0 top-[96px] bg-surface-container-lowest/98 backdrop-blur-xl border-b border-surface-container-highest shadow-2xl p-4 flex flex-col gap-3 font-label-md text-label-md max-h-[85vh] overflow-y-auto z-40">
+        <div className="xl:hidden fixed inset-x-0 top-[96px] bg-white border-b border-surface-container-highest shadow-2xl p-4 flex flex-col gap-3 font-label-md text-label-md max-h-[85vh] overflow-y-auto z-[100]">
           <Link to="/" className="p-2.5 rounded bg-surface-container text-on-surface flex items-center gap-2 hover:bg-surface-container-high">
             <span className="material-symbols-outlined text-[18px] text-primary-container">home</span>
             <span>Home</span>
