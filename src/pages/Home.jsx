@@ -197,9 +197,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             {/* Division 1: NSV */}
             <div className="p-6 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-4 hover:border-primary-container/50 transition-all shadow-sm group">
               <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/nsv-vehicle.jpg" alt="Network Survey Vehicle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="w-10 h-10 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[24px]">directions_car</span>
+                  <span className="w-8 h-8 rounded-lg bg-primary-container/10 text-primary-container flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[20px]">directions_car</span>
                   </span>
                   <span className="font-mono text-xs text-on-surface-variant">AASHTO M328</span>
                 </div>
@@ -219,9 +222,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             {/* Division 2: FWD */}
             <div className="p-6 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-4 hover:border-secondary/50 transition-all shadow-sm group">
               <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/fwd-trailer.jpg" alt="Falling Weight Deflectometer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[24px]">vertical_align_bottom</span>
+                  <span className="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[20px]">vertical_align_bottom</span>
                   </span>
                   <span className="font-mono text-xs text-on-surface-variant">ASTM D4694</span>
                 </div>
@@ -241,9 +247,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             {/* Division 3: MBIU */}
             <div className="p-6 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-4 hover:border-tertiary-container/50 transition-all shadow-sm group">
               <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/mbiu-unit.jpg" alt="Mobile Bridge Inspection Unit" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="w-10 h-10 rounded-xl bg-tertiary-container/10 text-tertiary-container flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[24px]">construction</span>
+                  <span className="w-8 h-8 rounded-lg bg-tertiary-container/10 text-tertiary-container flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[20px]">construction</span>
                   </span>
                   <span className="font-mono text-xs text-on-surface-variant">SIL-3 COMPLIANT</span>
                 </div>
@@ -263,9 +272,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             {/* Division 4: Software */}
             <div className="p-6 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-4 hover:border-primary-container/50 transition-all shadow-sm group">
               <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/software-dashboard.jpg" alt="Civil Survey Software and Data Processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="w-10 h-10 rounded-xl bg-primary-container/10 text-primary-container flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[24px]">analytics</span>
+                  <span className="w-8 h-8 rounded-lg bg-primary-container/10 text-primary-container flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[20px]">analytics</span>
                   </span>
                   <span className="font-mono text-xs text-on-surface-variant">QA/QC AUDIT RIGOR</span>
                 </div>
@@ -285,9 +297,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             {/* Division 5: Hardware & PCB */}
             <div className="p-6 rounded-2xl bg-surface-container border border-surface-container-high flex flex-col justify-between gap-4 hover:border-secondary/50 transition-all shadow-sm group">
               <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/pcb-lab.jpg" alt="Hardware Solutions and PCB Lab" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
                 <div className="flex items-center justify-between">
-                  <span className="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[24px]">cable</span>
+                  <span className="w-8 h-8 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center">
+                    <span className="material-symbols-outlined text-[20px]">cable</span>
                   </span>
                   <span className="font-mono text-xs text-on-surface-variant">IPC-A-610 CLASS 3</span>
                 </div>
@@ -305,9 +320,12 @@ export default function Home({ onOpenSpec, onTicketCreated }) {
             </div>
 
             {/* Support CTA card */}
-            <div className="p-6 rounded-2xl bg-surface-container-high border border-primary-container/30 flex flex-col justify-between gap-4 shadow-sm">
-              <div className="flex flex-col gap-2">
-                <div className="font-mono text-xs text-primary-container font-bold uppercase">// 24/7 SUPPORT</div>
+            <div className="p-6 rounded-2xl bg-surface-container-high border border-primary-container/30 flex flex-col justify-between gap-4 shadow-sm group">
+              <div className="flex flex-col gap-3">
+                <div className="w-full h-44 rounded-xl overflow-hidden bg-slate-900 border border-surface-container-high">
+                  <img src="/highway-inspection.jpg" alt="24/7 Field Support Deployment" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                </div>
+                <div className="font-mono text-xs text-primary-container font-bold uppercase">// 24/7 DISPATCH</div>
                 <h3 className="text-lg font-bold text-primary">Need Urgent Field Support?</h3>
                 <p className="text-sm text-on-surface-variant">
                   Our emergency mobile engineering vans deploy nationwide with loaner DAQ boards and replacement cable sets.

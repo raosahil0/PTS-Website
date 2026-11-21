@@ -113,12 +113,8 @@ export default function Services() {
 
         {/* 4. Software & Data */}
         <div className="p-8 rounded-2xl bg-surface-container border border-surface-container-high grid grid-cols-1 lg:grid-cols-12 gap-8 items-center hover:border-primary-container/40 transition-all shadow-sm">
-          <div className="lg:col-span-5 p-6 rounded-xl bg-surface-container-lowest border border-outline-variant flex flex-col justify-center items-center gap-4 text-center h-64">
-            <span className="material-symbols-outlined text-primary-container text-5xl">analytics</span>
-            <div className="font-mono text-xs text-on-surface-variant">
-              AASHTO / ASTM MATHEMATICAL PIPELINE<br />
-              <span className="text-primary font-bold">100% QA/QC AUDIT RIGOR</span>
-            </div>
+          <div className="lg:col-span-5 rounded-xl overflow-hidden h-64 bg-surface-container-lowest">
+            <img alt="Civil survey software and telemetry dashboard" className="w-full h-full object-cover" src="/software-dashboard.jpg" />
           </div>
           <div className="lg:col-span-7 flex flex-col gap-3">
             <div className="flex items-center gap-2">

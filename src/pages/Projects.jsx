@@ -7,6 +7,7 @@ const CASE_STUDIES = [
     title: "12-Vehicle State DOT Network Survey Vehicle Fleet Recalibration",
     client: "State Department of Transportation",
     system: "Network Survey Vehicles (NSV)",
+    img: "/highway-inspection.jpg",
     challenge: "Persistent drift between 100Hz laser profilometers and DMI wheel encoders across 15,000 miles of highway inventory, resulting in data rejection by federal auditors.",
     solution: "PTS deployed mobile diagnostic engineers who rebuilt the optical encoder harness, recalibrated all 12 laser profilometer arrays against certified quartz flats, and implemented synchronized ROMDAS trigger buses.",
     outcome: "100% audit approval, zero chainage drift, and full fleet turnaround completed in 7 business days."
@@ -16,6 +17,7 @@ const CASE_STUDIES = [
     title: "Commercial International Airport Heavy Weight Deflectometer (HWD) Audit",
     client: "Major Metropolitan Airport Authority",
     system: "Dynatest Heavy Weight Deflectometer (HWD)",
+    img: "/airport-runway.jpg",
     challenge: "Drop load impulse inconsistencies and geophone sensor signal clipping during mandatory runway bearing capacity evaluations under 200kN dynamic loads.",
     solution: "Replaced degraded piezoelectric load cell preamplifiers in our laboratory, aligned the 9-geophone tower array, and adjusted hydraulic drop catch timing according to FAA Advisory Circular standards.",
     outcome: "Runway subgrade structural classification completed within schedule with under 0.8% standard deviation on peak deflections."
@@ -25,6 +27,7 @@ const CASE_STUDIES = [
     title: "Suspension Bridge MBIU Hydraulic Proportional Valve Triage",
     client: "Interstate Bridge Maintenance Authority",
     system: "Barin Mobile Bridge Inspection Unit",
+    img: "/suspension-bridge.jpg",
     challenge: "Hydraulic proportional valve lockup on an articulated 19-meter under-deck platform over a tidal strait, creating an immediate safety interlock fault and halting critical inspections.",
     solution: "PTS dispatch flew senior hydraulics specialists with replacement Danfoss proportional spools and radio remote transceivers, executing bench alignment and CANbus loop testing on-site.",
     outcome: "Unit restored to full SIL-3 operational readiness within 18 hours of initial ticket dispatch."
@@ -34,6 +37,7 @@ const CASE_STUDIES = [
     title: "Emergency GIS Alignment & IRI Re-computation for 8,000km Highway Corridor",
     client: "National Infrastructure Concessionaire",
     system: "Software & Data Processing Pipeline",
+    img: "/software-dashboard.jpg",
     challenge: "Corrupted GPS timestamps and irregular odometer pulse intervals in raw laser telemetry files threatened contractual handover deadlines and milestone payments.",
     solution: "PTS software engineers ingested the raw multi-gigabyte binary files into our proprietary filtering engine, reconstructing the linear referencing model and outputting certified quarter-car IRI shapefiles.",
     outcome: "Successful DOT handover with zero penalty fees and mathematical verification reports delivered 48 hours ahead of schedule."

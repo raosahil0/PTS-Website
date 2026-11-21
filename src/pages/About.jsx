@@ -25,6 +25,18 @@ export default function About() {
         </p>
       </div>
 
+      {/* Facility Visual Banner */}
+      <div className="relative rounded-2xl overflow-hidden border border-surface-container-high shadow-lg">
+        <img src="/lab-facility.jpg" alt="PTS ISO 17025 Metrology & Calibration Facility" className="w-full h-64 sm:h-80 object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/50 to-transparent flex flex-col justify-end p-6 sm:p-8">
+          <span className="font-mono text-xs text-cyan-400 font-bold uppercase tracking-widest">// CENTRAL METROLOGY & CALIBRATION FACILITY</span>
+          <h2 className="text-xl sm:text-2xl font-bold text-white">NIST-Traceable Laser & Seismic Sensor Calibration Laboratory</h2>
+          <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mt-1">
+            Climate-controlled testing beds, optical flats, and automated vibration isolation towers certified to ISO/IEC 17025 and IPC-A-610 Class 3.
+          </p>
+        </div>
+      </div>
+
       {/* Core Pillars Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="p-6 rounded-xl bg-surface-container border border-surface-container-high flex flex-col gap-3">
