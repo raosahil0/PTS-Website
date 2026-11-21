@@ -118,92 +118,129 @@ export default function Navbar({ onOpenSearch }) {
 
             {/* Dropdown Menu Container with hover bridge */}
             <div
-              className={`absolute top-full left-0 pt-2 w-88 z-[100] transition-all duration-200 ${
+              className={`absolute top-full left-0 pt-2 w-[580px] z-[100] transition-all duration-200 ${
                 servicesDropdownOpen
                   ? 'opacity-100 visible translate-y-0'
                   : 'opacity-0 invisible -translate-y-1 pointer-events-none'
               }`}
             >
-              <div className="rounded-2xl bg-white border border-slate-200 shadow-2xl p-2.5 flex flex-col gap-1 ring-1 ring-slate-900/5">
+              <div className="rounded-2xl bg-white border border-slate-200 shadow-2xl p-3 flex flex-col gap-2 ring-1 ring-slate-900/5">
+                {/* Featured Top Card: All Services Overview */}
                 <Link
                   to="/services"
-                  className="p-2.5 rounded-xl bg-slate-50 hover:bg-sky-50 flex items-center gap-3 text-slate-900 hover:text-sky-700 transition-colors border border-slate-200/60 group"
+                  className="p-3 rounded-xl bg-slate-50 hover:bg-sky-50 flex items-center justify-between text-slate-900 hover:text-sky-700 transition-colors border border-slate-200/70 group"
                 >
-                  <span className="w-8 h-8 rounded-lg bg-sky-100 text-sky-700 flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">handyman</span>
-                  </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">All Services & SLAs</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">Comprehensive portfolio & diagnostic contracts</span>
+                  <div className="flex items-center gap-3">
+                    <span className="w-10 h-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                      <span className="material-symbols-outlined text-[20px]">handyman</span>
+                    </span>
+                    <div className="flex flex-col">
+                      <span className="font-bold text-xs uppercase tracking-wider">All Services & Engineering SLAs</span>
+                      <span className="text-xs text-slate-500 font-normal normal-case">Full portfolio, rapid dispatch tiers & ISO 17025 contracts</span>
+                    </div>
                   </div>
+                  <span className="material-symbols-outlined text-slate-400 group-hover:text-sky-600 group-hover:translate-x-1 transition-all text-[20px]">
+                    arrow_forward
+                  </span>
                 </Link>
 
-                <div className="my-1 border-t border-slate-100"></div>
+                {/* 2-Column Grid of Fleet Divisions */}
+                <div className="grid grid-cols-2 gap-1.5 pt-1">
+                  {/* 1. NSV */}
+                  <Link
+                    to="/nsv"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-sky-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">directions_car</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Network Survey (NSV)</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">Laser profilometers & ROMDAS sync</span>
+                    </div>
+                  </Link>
 
-                <Link
-                  to="/nsv"
-                  className="p-2 rounded-xl hover:bg-slate-50 flex items-center gap-3 text-slate-700 hover:text-sky-700 transition-colors group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">directions_car</span>
-                  </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">Network Survey Vehicles (NSV)</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">Laser profilometers & ROMDAS sync</span>
-                  </div>
-                </Link>
+                  {/* 2. FWD */}
+                  <Link
+                    to="/fwd"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-sky-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">vertical_align_bottom</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Deflectometer (FWD/HWD)</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">AASHTO R32 geophone calibrations</span>
+                    </div>
+                  </Link>
 
-                <Link
-                  to="/fwd"
-                  className="p-2 rounded-xl hover:bg-slate-50 flex items-center gap-3 text-slate-700 hover:text-sky-700 transition-colors group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">vertical_align_bottom</span>
-                  </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">Falling Weight Deflectometer (FWD)</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">AASHTO R32 geophone calibrations</span>
-                  </div>
-                </Link>
+                  {/* 3. MBIU */}
+                  <Link
+                    to="/mbiu"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-amber-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:bg-amber-100 group-hover:text-amber-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">construction</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Bridge Inspection (MBIU)</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">Proportional valves & interlocks</span>
+                    </div>
+                  </Link>
 
-                <Link
-                  to="/mbiu"
-                  className="p-2 rounded-xl hover:bg-slate-50 flex items-center gap-3 text-slate-700 hover:text-sky-700 transition-colors group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:bg-amber-100 group-hover:text-amber-700 transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">construction</span>
-                  </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">Mobile Bridge Inspection (MBIU)</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">Proportional valves & safety interlocks</span>
-                  </div>
-                </Link>
+                  {/* 4. Software & Data */}
+                  <Link
+                    to="/software-and-data"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-cyan-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center shrink-0 group-hover:bg-cyan-100 group-hover:text-cyan-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">analytics</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Software & Data</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">IRI filtering & moduli calculations</span>
+                    </div>
+                  </Link>
 
-                <Link
-                  to="/software-and-data"
-                  className="p-2 rounded-xl hover:bg-slate-50 flex items-center gap-3 text-slate-700 hover:text-sky-700 transition-colors group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:bg-cyan-100 group-hover:text-cyan-700 transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">analytics</span>
-                  </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">Software & Data Processing</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">IRI filtering & moduli back-calculation</span>
-                  </div>
-                </Link>
+                  {/* 5. Hardware Solutions & PCB */}
+                  <Link
+                    to="/hardware-solutions"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-sky-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">cable</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Hardware & PCB Lab</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">MIL-spec cabling & micro-soldering</span>
+                    </div>
+                  </Link>
 
-                <Link
-                  to="/hardware-solutions"
-                  className="p-2 rounded-xl hover:bg-slate-50 flex items-center gap-3 text-slate-700 hover:text-sky-700 transition-colors group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center shrink-0 group-hover:bg-sky-100 group-hover:text-sky-700 transition-colors">
-                    <span className="material-symbols-outlined text-[18px]">cable</span>
+                  {/* 6. Projects & Case Studies */}
+                  <Link
+                    to="/projects"
+                    className="p-2.5 rounded-xl hover:bg-slate-50 flex items-start gap-2.5 text-slate-700 hover:text-amber-700 transition-colors group"
+                  >
+                    <span className="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 group-hover:bg-amber-100 group-hover:text-amber-700 transition-colors mt-0.5">
+                      <span className="material-symbols-outlined text-[18px]">folder_special</span>
+                    </span>
+                    <div className="flex flex-col min-w-0">
+                      <span className="font-bold text-xs uppercase tracking-wide truncate">Projects & Case Studies</span>
+                      <span className="text-[11px] text-slate-500 font-normal normal-case">Highway, airport & bridge overhauls</span>
+                    </div>
+                  </Link>
+                </div>
+
+                {/* Bottom Quick Hotline Strip */}
+                <div className="mt-1 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500 font-mono px-2">
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>24/7 Field Dispatch Ready</span>
                   </span>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-xs uppercase tracking-wider">Hardware Solutions & PCB Lab</span>
-                    <span className="text-[11px] text-slate-500 font-normal normal-case">Custom MIL-spec cabling & micro-soldering</span>
-                  </div>
-                </Link>
+                  <a href="tel:+18005550787" className="text-sky-600 hover:text-sky-700 font-bold hover:underline">
+                    +1 (800) 555-PTS7
+                  </a>
+                </div>
               </div>
             </div>
           </div>
