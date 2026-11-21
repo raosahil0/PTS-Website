@@ -356,7 +356,7 @@
               <span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
               <span class="font-bold tracking-widest">PTS-INFRASTRUCTURE-DIAGNOSTIC-HUB</span>
               <span class="text-outline">/</span>
-              <span class="text-on-surface-variant font-mono">SYS.VER 4.8.2-PROD</span>
+              <span class="text-on-surface-variant font-mono" id="live-utc-clock">SYS.VER 4.8.2-PROD</span>
             </div>
             <div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant flex-wrap">
               <span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-mono border border-outline-variant flex items-center gap-1.5">
@@ -364,7 +364,7 @@
                 <span>TELEMETRY: DUAL-LINK VALIDATED</span>
               </span>
               <span class="px-2.5 py-1 rounded bg-surface-container-high text-tertiary-container font-mono border border-outline-variant">
-                LATENCY: &lt;14MS
+                LATENCY: &lt;<span id="telemetry-ping">14ms</span>
               </span>
             </div>
           </div>
@@ -404,7 +404,6 @@
                 <span>Technical Specs</span>
               </button>
             </div>
-          </div>
           </div>
         </div>
       </section>
@@ -690,8 +689,8 @@
       <!-- =========================================================================
            INTERACTIVE ENGINEERING TOOLS: DEFLECTION BASIN & HARNESS WORKBENCH
            ========================================================================= -->
-      <section class="w-full px-4 sm:px-gutter-lg py-margin-lg bg-surface-container-lowest border-b border-surface-container-high">
-        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+      <section class="w-full px-4 sm:px-gutter-lg py-margin-lg bg-surface-container-lowest border-b border-surface-container-high" id="deflection-simulator">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl" id="equipment-pillars">
           <div class="flex flex-col gap-space-xs">
             <span class="font-label-md text-label-md text-primary-container uppercase font-mono tracking-widest">// INTERACTIVE FIELD UTILITIES</span>
             <h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
@@ -1088,8 +1087,8 @@
       <!-- =========================================================================
            SECTORS SERVED & FIELD PROOF
            ========================================================================= -->
-      <section class="w-full px-4 sm:px-gutter-lg py-margin-lg bg-surface-container-lowest border-b border-surface-container-high">
-        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+      <section class="w-full px-4 sm:px-gutter-lg py-margin-lg bg-surface-container-lowest border-b border-surface-container-high" id="deflection-simulator">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-xl" id="equipment-pillars">
           <div class="flex flex-col gap-space-md">
             <span class="font-label-md text-label-md text-primary-container uppercase font-mono tracking-widest">// SECTORS SERVED</span>
             <div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm font-label-md text-label-md">
