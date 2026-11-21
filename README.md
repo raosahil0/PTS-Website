@@ -81,10 +81,15 @@ PTS-Website/
 │   ├── logo.png                  # Primary PTS transparent branding
 │   ├── logo-white.png            # White-backed PTS branding
 │   ├── logo-icon.png             # Square badge icon
-│   ├── nsv-vehicle.jpg           # NSV fleet photo
+│   ├── nsv-vehicle.jpg           # Network Survey Vehicle fleet photo
 │   ├── fwd-trailer.jpg           # FWD deflectometer trailer photo
 │   ├── mbiu-unit.jpg             # MBIU bridge access unit photo
-│   └── pcb-lab.jpg               # IPC-certified PCB laboratory photo
+│   ├── pcb-lab.jpg               # IPC-certified PCB laboratory photo
+│   ├── software-dashboard.jpg    # Civil survey software & telemetry dashboard
+│   ├── highway-inspection.jpg    # Highway inspection fleet deployment
+│   ├── airport-runway.jpg        # Airport runway HWD testing
+│   ├── suspension-bridge.jpg     # Suspension bridge MBIU triage
+│   └── lab-facility.jpg          # ISO/IEC 17025 metrology & calibration facility
 ├── src/
 │   ├── components/               # Global shared UI components
 │   │   ├── Navbar.jsx            # Sticky navigation, status strip, services dropdown, mobile drawer
