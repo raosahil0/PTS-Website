@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+}
+
+.grid-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(2, 132, 199, 0.08) 1px, transparent 1px);
+}
